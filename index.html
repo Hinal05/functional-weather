@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <input type="text" id="locationInput" placeholder="Enter location">
+    <button class="btn-weather">Get Weather</button>
+    <button class="btn-refresh">Refresh</button>
+    <div class="loader-wrapper" id="loader"><div class="loader"></div></div>
+    <div id="currentLocationWeather"></div>
+    <h2>3-Days Forecast</h2>
+    <table class="week-weather">
+      <thead>
+        <tr><th>Date</th> <th>Day</th> <th>Weather</th> <th>Max Temperature</th> <th>Min Temperature</th></tr>
+      </thead>
+      <tbody id="searchLocationWeeklyWeatherInfo"></tbody>
+    </table>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
